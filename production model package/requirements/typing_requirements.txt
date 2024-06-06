@@ -1,0 +1,15 @@
+# repo maintenance tooling
+
+# Code styling enforcement tool
+black>=22.12.0,<23.0.0
+
+# Linting tool to tell us whether we are adhering to good python convensions
+# It will report about any unused module
+# It will report about any uneven new line spacing
+flake8>=6.0.0,<7.0.0
+
+# Type checking tool
+mypy>=0.991,<1.0.0
+
+# Ensures that imports are in the correct order
+isort>=5.11.4,<6.0.0

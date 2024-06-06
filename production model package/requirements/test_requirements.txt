@@ -1,0 +1,7 @@
+# First we will install requirements from requirements.txt file
+# This is because we don't want to install all the dependencies up front
+# We need some extra dependencies to be installed only during testing
+-r requirements.txt
+
+# testing requirements
+pytest>=7.2.0,<8.0.0
