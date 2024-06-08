@@ -167,3 +167,7 @@ Project: price-prediction-ml-model-production-pipeline-deployment
 
 # vritual environment
 /venv2/
+
+# Publish to pypi
+/package publish pypi/dist/
+/package publish pypi/*.egg-info

@@ -1,0 +1,3 @@
+Pypi link: https://pypi.org/project/house-price-pred-mlops/0.0.1/
+Project Name: house-price-pred-mlops 0.0.1
+Download Command: pip install house-price-pred-mlops==0.0.1
