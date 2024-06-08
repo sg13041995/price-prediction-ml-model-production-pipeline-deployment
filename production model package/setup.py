@@ -33,7 +33,10 @@ long_description = DESCRIPTION
 about = {}
 ROOT_DIR = Path(__file__).resolve().parent
 REQUIREMENTS_DIR = ROOT_DIR / 'requirements'
+
+# This name "regression_model" will be used to import elements from this published package
 PACKAGE_DIR = ROOT_DIR / 'regression_model'
+
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
