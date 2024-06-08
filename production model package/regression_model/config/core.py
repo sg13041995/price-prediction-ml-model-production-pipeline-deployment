@@ -1,13 +1,12 @@
 # We can do the similar work with os module but the newer way is using pathlib
 from pathlib import Path
-
 from typing import Dict, List, Optional, Sequence
 
 # Pydantic module is good for data validation and settings managemnet
 # We will use this to define our config classes
 from pydantic import BaseModel
 
-# Good way of working with yaml without causing much errors 
+# Good way of working with yaml without causing much errors
 from strictyaml import YAML, load
 
 import regression_model
@@ -22,7 +21,10 @@ TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 # We have two sub config and one main config
 
 # Sub config 1
+
+
 class AppConfig(BaseModel):
+
     """
     Application-level config.
     """
@@ -31,6 +33,7 @@ class AppConfig(BaseModel):
     training_data_file: str
     test_data_file: str
     pipeline_save_file: str
+
 
 # Sub config 2
 class ModelConfig(BaseModel):
@@ -63,12 +66,14 @@ class ModelConfig(BaseModel):
     garage_mappings: Dict[str, int]
     finish_mappings: Dict[str, int]
 
+
 # Main config
 class Config(BaseModel):
     """Master config object."""
 
     app_config: AppConfig
     model_config: ModelConfig
+
 
 # We have 3 helper functions
 
